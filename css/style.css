@@ -12,7 +12,12 @@ p {
   padding: 0;
   margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
 }
@@ -106,9 +111,13 @@ address {
 
 /* ------------------------------FIRST SECTION---------------------------------------- */
 .first-section {
-  background-color: var(--first-section-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+   url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1689552000&Signature=qRMDMmR-cAv7Q1Bwwiblf7fCnBaQd1BMLL237Gx4E1NYBa1cDQL4SKilIYkVP43f7wWr32MnbYQ5cB~EwGGe7L-b2T5cQN1r8HpJoPw52bHOX5w0gFOMTYucXqtmrTO5ayDEm8BV-uoUFbWscVqkul5N9OWMOe9lBhBX6q843Re19~6IRZ8SIhnaUuFtAwWFtLySNT9S7Lx7OWuLiRtilNWyDYSH51Ib2bewo-REw7hFeFb6bhF3R1aHaiE4nPIB5RSIC9So8mN32dGro7aINRc9Lo5bHQwOztG6WHn7UDph81BuwTCNFjcPPaijXEBeLAWwWYX8f9Yd3OZyUedMxQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-size: cover;
+  background-position: center center;
   padding: 188px 0;
 }
+
 
 .first-section-title {
   color: #ffffff;
@@ -169,6 +178,14 @@ address {
   width: calc((100% - 72px) / 4);
 }
 
+.features-svg {
+  border-radius: 4px;
+  background-color: var(--studio-color-footer);
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  padding: 24px 100px;
+}
 .features-title {
   font-size: 20px;
   font-weight: 500;
@@ -263,13 +280,13 @@ address {
 }
 .customers-title {
   font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-text-align: center;
-color: var(--first-section-color);
-margin-bottom: 72px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--first-section-color);
+  margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
@@ -277,21 +294,25 @@ margin-bottom: 72px;
 }
 .customers-item {
   border-radius: 4px;
-border: 1px solid #8E8F99;
-padding: 16px 32px;
-width: 168px;
-height: 88px;
+  border: 1px solid #8e8f99;
+  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
 }
 .svg {
   width: 104px;
-height: 56px;
-flex-shrink: 0;
+  height: 56px;
+  flex-shrink: 0;
 }
 
 /* ----------------------------FOOTER------------------------------- */
 .footer {
   background-color: var(--first-section-color);
   padding: 100px 0;
+}
+.footer-main-container{
+  display: flex;
+  gap: 120px;
 }
 .footer-logo {
   display: flex;
@@ -313,6 +334,25 @@ flex-shrink: 0;
   letter-spacing: 0.02em;
   color: var(--studio-color-footer);
   max-width: 264px;
+}
+.footer-social {
+  flex-grow: 1;
+}
+.social-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--studio-color-footer);
+  margin-bottom: 16px;
+}
+.social-link {
+  display: flex;
+  gap: 16px;
+}
+.social-svg {
+  width: 40px;
+height: 40px;
 }
 
 /* --------------------------PORTFOLIO------------------------- */

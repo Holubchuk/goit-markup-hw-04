@@ -353,6 +353,7 @@ address {
 .customers-item {
   width: calc((100% - 120px) / 6);
   height: 88px;
+ 
 }
 .customers-link {
   width: 100%;
@@ -372,7 +373,7 @@ address {
   border-color: #404bbf;
 }
 .svg {
-  fill: var(--svg-color);
+  fill: currentColor;
 }
 .svg:hover,
 .svg:focus {

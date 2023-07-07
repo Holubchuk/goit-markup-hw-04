@@ -208,7 +208,6 @@ address {
 }
 .features-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 .features-item {
@@ -236,7 +235,6 @@ address {
 }
 .products-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 .products-item {
@@ -256,8 +254,6 @@ address {
 /*--------------------------------- TEAM------------------------- */
 .team-section {
   background-color: var(--studio-color-footer);
-  align-items: center;
-  justify-content: center;
   padding: 120px 0;
 }
 
@@ -276,8 +272,6 @@ address {
 }
 .team-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   gap: 24px;
 }
 .team-list-item {
